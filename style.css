@@ -88,8 +88,8 @@
   position: absolute;
   content: "";
   left: 10%;
-  width: 450px;
-  height: 450px;
+  width: 150px;
+  height: 150px;
   background: url("./assets/img/mouse9nerd.jpg");
   background-size: cover;
   background-position: center center;
@@ -99,8 +99,8 @@
   animation: sliderShape 10s linear infinite;
   z-index: -1;
   -webkit-animation: sliderShape 5s linear infinite;
-  --s: 180px; /* size of the frame */
-  --g: 120px; /* the gap */
+  --s: 160px; /* size of the frame */
+  --g: 110px; /* the gap */
   --c: red; 
   padding: calc(var(--g) + var(--s));
 }
@@ -122,8 +122,6 @@
     transform: translate3d(0,-3px,0) rotateZ(0.01deg);
   }
 }
-
-
 
 .work-card-hero-img {
   width: 100%;
