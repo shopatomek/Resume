@@ -52,6 +52,10 @@
   animation: zoom 1s;
   /* filter: none; */
 }
+
+
+
+
 .container {
   display: flex;
   flex-direction: row;
@@ -72,14 +76,60 @@
 }
 
 .list-container {
-  
+  height: 100%;
   width: 100%;
   display: inline-block;
   font-size: 16px;
   margin-left: 40px;
   /* border: 2px solid black; */
+}
+
+.list-container:before {
+  position: absolute;
+  content: "";
+  left: 10%;
+  width: 450px;
+  height: 450px;
+  background: url("/assets/img/mouse9nerd.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 12% 23% 47% 382% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 13s linear infinite;
+  z-index: -1;
+  -webkit-animation: sliderShape 10s linear infinite;
+  --s: 20px; /* size of the frame */
+  --g: 10px; /* the gap */
+  --c: #f0eeec; 
+
+  padding: calc(var(--g) + var(--s));
 
 }
+
+
+
+
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
+
+
 .work-card-hero-img {
   width: 100%;
   display: block;
@@ -504,6 +554,10 @@ li span a:hover {
   text-align: justify;
   /* font-weight: 800; */
   letter-spacing: 1.2;
+}
+
+.hero-des-fadeIn{
+background-color: #f2f2f2;
 }
 
 .contact-des {
