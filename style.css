@@ -96,19 +96,14 @@
   background-repeat: no-repeat;
   border-radius: 12% 23% 47% 382% 35% / 45% 45% 80% 66%;
   will-change: border-radius, transform, opacity;
-  animation: sliderShape 13s linear infinite;
+  animation: sliderShape 10s linear infinite;
   z-index: -1;
-  -webkit-animation: sliderShape 10s linear infinite;
-  --s: 20px; /* size of the frame */
-  --g: 10px; /* the gap */
-  --c: #f0eeec; 
-
+  -webkit-animation: sliderShape 5s linear infinite;
+  --s: 180px; /* size of the frame */
+  --g: 120px; /* the gap */
+  --c: red; 
   padding: calc(var(--g) + var(--s));
-
 }
-
-
-
 
 @keyframes sliderShape{
   0%,100%{
