@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: row;
   font-size: 16px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .col-md-12{
-  border: 2px solid #44444450;
+  border: 2px solid #dbdbdb33;
 }
 
 .list-container {
@@ -76,9 +76,8 @@
   width: 100%;
   display: inline-block;
   font-size: 16px;
-   
   margin-left: 40px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
 }
 .work-card-hero-img {
@@ -522,6 +521,14 @@ li span a:hover {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+}
+
+.img{
+  border-radius: 35%;
+  width:80%;
+  height: 80%;
+  animation: animate 5s linear;
+  
 }
 
 .form-control {
