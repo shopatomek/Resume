@@ -90,7 +90,7 @@
   left: 10%;
   width: 450px;
   height: 450px;
-  background: url("/assets/img/mouse9nerd.jpg");
+  background: url("./assets/img/mouse9nerd.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ body {
 }
 
 .social-icons a:hover {
-  color: ;
+  color: gray ;
 }
 
 li span a {
@@ -316,7 +316,7 @@ li span a:hover {
 
 .legal-links:hover {
   text-decoration: none;
-  color: ;
+  color: gray ;
 }
 
 .legal a,
@@ -585,7 +585,7 @@ label {
   padding: 0.5rem 0.75rem;
   width: 90%;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #495057;
   background: none;
   border: none;
@@ -696,7 +696,8 @@ li {
 }
 
 .social-icons {
-  margin-top: 30%;
+  margin-top: 20;
+  margin-left: auto;
 }
 
 .footer-full {
@@ -919,7 +920,7 @@ li span:hover:after {
   }
 
   #contact-social {
-    margin-top: 10%;
+    margin-top: 10%;  
   }
 
   .footer-credits {
