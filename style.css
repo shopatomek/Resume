@@ -123,6 +123,54 @@
   }
 }
 
+.list-container2 {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 40px;
+  /* border: 2px solid black; */
+}
+
+.list-container2:before {
+  position: absolute;
+  content: "";
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  background: url("./assets/img/mouse9rock.jpg");
+  background-size: cover;
+  background-position: 20% 20%;
+  background-repeat: no-repeat;
+  border-radius: 12% 23% 47% 382% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 10s linear infinite;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+  --s: 160px; /* size of the frame */
+  --g: 110px; /* the gap */
+  --c: red; 
+  padding: calc(var(--g) + var(--s));
+}
+
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
 .work-card-hero-img {
   width: 100%;
   display: block;
@@ -282,7 +330,6 @@ body {
 .social-icons2 a{
    text-decoration: none;
   transition: all 1s;
-  color: none;
   font-size: 4em;
   
 }
