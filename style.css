@@ -38,7 +38,8 @@
 }
 #work-text {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1rem;
+  color: black;
 }
 .work-hero-card h1 {
   padding-top: 20px;
