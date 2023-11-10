@@ -341,6 +341,7 @@ body {
   color: var(--light-text-color);
   text-decoration: none;
   transition: all 1s;
+  padding-bottom: 30px;
 }
 
 .social-icons a:hover {
@@ -416,15 +417,16 @@ li span a:hover {
   display: block;
   width: 80vw;
 
-  margin-top: 20px;
+  margin-top: 10px;
   left: 0;
   right: 0;
   /* background: black; */
 }
 
 .nav-logo {
-  height: 100%;
+  height: 70%;
   float: left;
+  margin-bottom: 0px;
 }
 
 .menu-wrap {
@@ -714,7 +716,7 @@ label {
 }
 
 #hero-img {
-  margin-top: 50px;
+  padding-top:3rem;
   width: 90%;
 }
 
@@ -733,17 +735,11 @@ label {
 }
 
 .nav-items {
-  margin-left: 6rem;
+  float:inline-start;
+  padding-left: 8em;
   color: black;
-  float: right;
+  display: flex;
   font-size: 22px;
-}
-
-ul {
-  float: right;
-  /* color:white; */
-  list-style: none;
-  /* padding: 30px 0px; */
 }
 
 li {
@@ -756,13 +752,13 @@ li {
 
 .social-icons {
   margin-top: 20;
-  margin-left: auto;
+  
 }
 
 .footer-full {
   width: 80vw;
   margin: 0 auto;
-  padding: 30px 10px;
+  padding: 10px 10px;
   padding-top: 100px;
   position: relative;
   bottom: 0;
@@ -847,7 +843,7 @@ li span:hover:after {
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   #left-hero {
-    padding-left: 80px;
+    
     flex: 0 0 100% !important;
     max-width: 100% !important;
   }
@@ -914,7 +910,7 @@ li span:hover:after {
   }
 
   #left-hero {
-    padding-left: 50px;
+    padding-left: 10px;
   }
 
   #work-row {
@@ -937,7 +933,7 @@ li span:hover:after {
   }
 
   .hero-tag {
-    margin-top: 20vh;
+    margin-top: 20px;
     font-size: 4em;
   }
 
@@ -976,6 +972,9 @@ li span:hover:after {
   .footer-full {
     text-align: center;
     padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    padding-left: 6rem;
+    padding-right: 0 !important;
   }
 
   #contact-social {
