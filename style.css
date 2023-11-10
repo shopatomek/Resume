@@ -212,7 +212,7 @@
   padding-left: 135px;
   padding-right: 135px;
   width: 100vw;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .work-hero {
@@ -588,7 +588,7 @@ li span a:hover {
 }
 
 .hero-tag {
-  margin-top: 15vh;
+  margin-top: 20px;
   text-align: left;
   font-size: 4.5em;
   font-weight: bold;
@@ -597,7 +597,7 @@ li span a:hover {
 }
 
 .contact-hero {
-  margin-top: 0vh;
+  
   font-size: 3.5em;
 }
 
@@ -710,13 +710,16 @@ label {
   transition: all 1s;
 }
 
+
+
 .contact-btn:hover {
   color: #007bff;
   border: 2px solid;
 }
 
+
 #hero-img {
-  padding-top:3rem;
+  padding-top:2rem;
   width: 90%;
 }
 
@@ -965,9 +968,9 @@ li span:hover:after {
     z-index: 3;
   }
 
-  .contact-hero {
-    margin-top: 10vh;
-  }
+  /* .contact-hero {
+    margin-top: 20px;
+  } */
 
   .footer-full {
     text-align: center;
