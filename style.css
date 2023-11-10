@@ -599,7 +599,8 @@ li span a:hover {
 }
 
 .hero-des {
-  padding-right: 60px;
+  /* padding-right: 60px;
+  padding-left: 30px; */
   text-align: justify;
   /* font-weight: 800; */
   letter-spacing: 1.6;
@@ -722,6 +723,7 @@ label {
 
 #left-hero {
   padding-left: 150px;
+  padding-right: 150px;
 }
 
 
@@ -845,7 +847,6 @@ li span:hover:after {
 @media (min-width: 768px) and (max-width: 1024px) {
   #left-hero {
     padding-left: 20px;
-    padding-right: 20px;
     flex: 0 0 100% !important;
     max-width: 100% !important;
   }
@@ -859,7 +860,7 @@ li span:hover:after {
     width: 100%;
   }
 
-  #hero-right {
+  #hero-right .hero-des{
     display: none;
   }
   .work-double-row {
@@ -995,8 +996,7 @@ li span:hover:after {
     padding-right: 10px;
     text-align: left;
     font-size: 0.8em;
-      padding-right: 30px;
-        padding-left: 30px;
+     
   }
 
   .privacy-policy p {
