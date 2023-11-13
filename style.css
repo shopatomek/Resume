@@ -21,6 +21,8 @@
   --hero-color: black;
   --true-blue: #007bff;
 }
+
+
 .work-hero-card {
   display: block;
   margin: 0 auto;
@@ -44,7 +46,6 @@
 .work-hero-card h1 {
   padding-top: 20px;
   text-align: center;
-  font-size: 0.8em;
   font-weight: bold;
 }
 .work-hero-card:hover {
@@ -55,7 +56,33 @@
 }
 
 
-
+    .typer {
+      display: inline;
+      animation: type 5s steps(100, end), blink 0.5s step-end infinite;
+      
+      overflow: hidden;
+      border-right: 2px solid transparent;
+      margin-right: 3px;
+    }
+  
+    @keyframes type {
+  
+      0%,
+      100% {
+        width: 0;
+      }
+  
+      20%,
+      80% {
+        width: 100%;
+      }
+    }
+  
+    @keyframes blink {
+      50% {
+        border-right-color: transparent;
+      }
+    }
 
 .container {
   display: flex;
@@ -84,6 +111,21 @@
   margin-left: 40px;
   /* border: 2px solid black; */
 }
+
+/* For tablet view */
+@media (max-width: 768px) {
+
+  .list-container .img {
+    width: 40%;
+    height: 40%;
+  }
+  .list-container2 .img {
+    display: none;
+  }
+  
+}
+
+
 
 .list-container:before {
   position: absolute;
@@ -134,7 +176,7 @@
 }
 
 .list-container2:before {
-  position: absolute;
+  position: fixed;
   content: "";
   left: 10%;
   width: 250px;
@@ -153,6 +195,7 @@
   --c: red; 
   padding: calc(var(--g) + var(--s));
 }
+
 
 @keyframes sliderShape{
   0%,100%{
@@ -230,9 +273,6 @@
   padding-top: 40px;
 }
 
-.work-des h1 {
-  font-weight: bold;
-}
 
 .work-des p {
   text-align: justify;
@@ -301,7 +341,7 @@ body {
 }
 
 .comingsoon h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .comingsoon {
@@ -586,17 +626,15 @@ li span a:hover {
 
 .hero-tag {
   margin-top: 20px;
+  margin-bottom: 10px;
   text-align: left;
-  font-size: 4.5em;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--hero-color);
   font-family: "CircularStd", sans-serif;
 }
 
-.contact-hero {
-  
-  font-size: 3.5em;
-}
+
 
 .hero-des {
   /* padding-right: 60px;
@@ -651,7 +689,7 @@ label {
 }
 
 .fade-in {
-  animation: fade-in 15s linear infinite;
+  animation: fade-in 5s linear infinite;
 }
 @keyframes fade-in {
   from {
@@ -700,8 +738,8 @@ label {
 }
 
 .contact-btn {
-  margin-left: 6px;
-  padding: 5px 10px;
+  margin-left: 20px;
+  padding: 10px 10px;
   color: var(--light-text-color);
   background: none;
   border: 2px solid var(--light-text-color);
@@ -846,10 +884,18 @@ li span:hover:after {
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   #left-hero {
-    padding-left: 20px;
+    padding-left: 40px;
     flex: 0 0 100% !important;
     max-width: 100% !important;
   }
+
+    @media only screen and (max-width: 768px) {
+      #left-hero {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
 
   #work-row {
     padding-left: 50px;
@@ -860,7 +906,8 @@ li span:hover:after {
     width: 100%;
   }
 
-  #hero-right .hero-des{
+
+  #hero-right {
     display: none;
   }
   .work-double-row {
@@ -904,6 +951,14 @@ li span:hover:after {
     margin-top: 0px;
     padding: 0 20px;
   }
+.list-container2:before {
+
+  width: 50px;
+  height: 50px;
+
+  background-position: 20% 20%
+}
+
   #index-body {
     /*         background: url('assets/img/mobile.png'); */
     background-size: cover;
@@ -932,7 +987,8 @@ li span:hover:after {
 
   .hero-tag {
     margin-top: 20px;
-    font-size: 4em;
+    font-size: 2.5rem;
+    padding-left: 20px;
   }
 
   #hero-right {
@@ -940,8 +996,8 @@ li span:hover:after {
   }
 
   .hero-des {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .menu-wrap {
